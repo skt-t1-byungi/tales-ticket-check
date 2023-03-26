@@ -1,0 +1,14 @@
+{
+    "private": true,
+    "type": "commonjs",
+    "dependencies": {
+        "undici": "^5.21.0"
+    },
+    "prettier": {
+        "arrowParens": "avoid",
+        "semi": false,
+        "singleQuote": true,
+        "tabWidth": 4,
+        "printWidth": 120
+    }
+}
