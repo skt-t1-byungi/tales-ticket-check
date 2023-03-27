@@ -5,5 +5,4 @@ dist/
 !.github/
 *-lock.yaml
 *-lock.json
-*.lock
 *.log
