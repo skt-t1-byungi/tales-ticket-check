@@ -8,13 +8,13 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
-            - uses: actions/setup-node@v3
-              with:
-                  cache: pnpm
             - uses: pnpm/action-setup@v2
               with:
                   version: 7
-                  run_install: true
+            - uses: actions/setup-node@v3
+              with:
+                  cache: pnpm
+            - run: pnpm install
             - run: node run.js
               env:
                   SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
